@@ -4,7 +4,6 @@ import { RootState } from '@/app/store';
 import {BottomSection} from "@modules/Home/components/bottomSection/BottomSection";
 import {NavbarSection} from "@modules/Home/components/navbarSection/NavbarSection";
 import {TopSection} from "@modules/Home/components/topSection/TopSection";
-import {fetchUser} from "@modules/Home/HomeSlice";
 
 const mapStateToProps = ({ home }: RootState) => ({
     ...home,
@@ -26,7 +25,7 @@ export const HomeComponent: React.FC<Props> = (props) => {
 
     useEffect(() => {
         if (!user) {
-            dispatch(fetchUser())
+
         }
     })
 

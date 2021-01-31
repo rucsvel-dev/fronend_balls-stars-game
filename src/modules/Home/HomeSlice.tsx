@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import HomeState from "./homeTypes";
+import {HomeState} from "./homeTypes";
 import {getMe} from "@/api/userApi/userApi";
 import {AppThunk} from "@/app/store";
 import {GetMeResults} from "@/api/userApi/userApiTypes";
@@ -45,13 +45,3 @@ export const {
 } = HomeSlice.actions
 
 export default HomeSlice.reducer
-
-export const fetchUser = (): AppThunk => async dispatch => {
-    try {
-        dispatch(getMeStart())
-        const user = await getMe()
-        dispatch(getMeSuccess(user))
-    } catch (err) {
-        dispatch(getMeFailure(err))
-    }
-}

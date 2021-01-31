@@ -1,4 +1,4 @@
-export default interface HomeState {
+export interface HomeState {
     username: string | null
     level: number | null
     rating: number | null

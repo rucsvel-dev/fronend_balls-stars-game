@@ -16,3 +16,8 @@ export interface GetMeResults {
     ok: boolean
     user: User
 }
+
+export interface GetCheckJwtResult {
+    ok: boolean
+    error?: string
+}
