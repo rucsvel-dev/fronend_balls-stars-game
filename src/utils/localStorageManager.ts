@@ -3,5 +3,5 @@ export const getToken = (): string | null | undefined => {
 }
 
 export const setToken = (token: string): void => {
-    return localStorage.setItem('jwt', token)
+    localStorage.setItem('jwt', token)
 }

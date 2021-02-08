@@ -1,6 +1,6 @@
 import {login, loginWithGoogle, logout, sessionChecked} from './LoginSlice';
 import { take, call, put, fork } from 'redux-saga/effects';
-import {getToken} from "@/utils/auth";
+import {getToken} from "@/utils/localStorageManager";
 import {getLoginWithGoogle, getMe} from "@/api/userApi/userApi";
 // import { isEmpty } from 'ramda';
 

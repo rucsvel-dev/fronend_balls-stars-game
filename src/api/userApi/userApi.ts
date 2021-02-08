@@ -1,5 +1,5 @@
 import axios from 'axios'
-import {getToken} from "@/utils/auth";
+import {getToken} from "@/utils/localStorageManager";
 
 export async function getJwtCheck() {
     const url = `http://localhost:3000/api/users/jwtCheck`
